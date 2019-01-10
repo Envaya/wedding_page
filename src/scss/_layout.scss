@@ -1,0 +1,115 @@
+@import "variables";
+
+main {
+  padding: 4rem 0;
+}
+
+.inlay {
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media only screen and (min-width: 75em) {
+    width: 1200px;
+  }
+}
+
+section {
+  margin-bottom: 7.5rem;
+
+  //&:last-of-type {
+  //  margin-bottom: 0;
+  //}
+
+  .section-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 5rem;
+
+    & img {
+      margin-bottom: -10px;
+      padding: 0 0.5rem;
+    }
+
+    &-line {
+      width: 10%;
+      border-bottom: solid 1px $wedding-grey;
+    }
+  }
+}
+
+.section-registration {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  & > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+}
+
+.section-contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  & > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  &-paragraph {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  &-container {
+    padding: 6rem 0;
+
+    & .contact-data {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      font-size: 1.4rem;
+
+      &-name {
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+      }
+
+      &-phone {
+        padding-bottom: 0.3rem;
+      }
+
+      & i {
+        padding-right: 1rem;
+      }
+    }
+
+    .contact-portrait {
+      height: 15rem;
+      width: 15rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 0 auto;
+      border-radius: 50%;
+
+      &.left {
+        background-image: url("/src/img/groom.png");
+      }
+
+      &.right {
+        background-image: url("/src/img/bride.png");
+      }
+    }
+  }
+}

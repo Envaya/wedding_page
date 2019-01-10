@@ -1,0 +1,176 @@
+
+.wed-button {
+  padding: 0.5rem 3rem;
+  background-color: $wedding-grey;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 0.5rem;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-white {
+    color: $wedding-grey;
+    background-color: white;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.wishlist {
+  &-item {
+    position: relative;
+    height: 18rem;
+    overflow: hidden;
+
+    &:hover .wishlist-item-content {
+      display: flex;
+      z-index: 2;
+    }
+
+    &:hover .wishlist-item-bg {
+      filter: blur(2px);
+    }
+
+    &-content {
+      text-align: center;
+      height: 100%;
+      display: none;
+      color: white;
+      padding: 1.5rem 2rem;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & h3:after {
+        content: ' ';
+        display: block;
+        border: 0.75px solid white;
+        width: 20%;
+        margin: 0.5rem auto 0 auto;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+
+      span {
+        margin-right: 0;
+      }
+
+      //& .loading-bar-container {
+      //  margin-bottom: 2rem;
+      //}
+
+      & .loading-bar {
+        height: 1rem;
+        border: 2px solid white;
+        position: relative;
+
+        &-progress {
+          width: 40%;
+          background-color: white;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+    }
+    &-bg {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 18rem;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.place-card-large {
+  display: none !important;
+}
+
+.event-info {
+  #map {
+    height: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    filter: grayscale(100%);
+    margin: 5rem 0;
+  }
+
+  .event-item {
+    position: relative;
+    display: flex;
+
+    &-img {
+      position: absolute;
+      z-index: 1;
+
+      &-left {
+        left: 20%;
+        top: 30%;
+      }
+
+      &-right {
+        right: 25%;
+        top: 10%;
+      }
+    }
+
+    &-light {
+      background-color: $wedding-light-grey;
+    }
+    &-dark {
+      background-color: $wedding-grey;
+    }
+
+    &-content {
+      z-index: 2;
+      padding: 3rem 0;
+      color: $wedding-black;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      max-width: 20rem;
+      text-align: justify;
+
+      &-title {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $wedding-black;
+        width: 100%;
+      }
+      &-data {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.9rem;
+        justify-content: space-around;
+        padding: 0.75rem 0;
+
+        & i {
+          padding-right: 0.5rem;
+        }
+      }
+      &-text {
+
+      }
+    }
+  }
+}
+

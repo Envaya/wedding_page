@@ -1,0 +1,81 @@
+@import "variables";
+@import "responsive";
+
+header {
+  background-image: url("/src/img/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 761px;
+  position: relative;
+
+  & .content-container {
+    padding: 5rem 0;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.96) 93%, rgba(255, 255, 255, 1) 100%);
+
+    .page-title {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: $wedding-black;
+
+      img {
+        padding: 0 3rem;
+        @include wed-phone {
+          flex-grow: 1;
+          flex-basis: 100%;
+        }
+      }
+
+    }
+    & .date-container {
+      margin: 2rem auto;
+      text-align: center;
+      color: $wedding-black;
+
+      & span {
+        font-size: 2rem;
+        @include wed-st-small-desktop {
+          font-size: 1.6rem;
+        }
+      }
+
+      & img {
+        padding: 0;
+        height: 3rem;
+        @include wed-st-small-desktop {
+          height: 1.8rem;
+        }
+        width: auto;
+      }
+    }
+    .couple-portrait {
+      height: 15rem;
+      width: 15rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 0 auto;
+      border-radius: 50%;
+
+      @include wed-st-tablet {
+        display: none;
+      }
+
+      &.groom {
+        background-image: url("/src/img/groom.png");
+      }
+
+      &.bride {
+        background-image: url("/src/img/bride.png");
+      }
+    }
+  }
+}

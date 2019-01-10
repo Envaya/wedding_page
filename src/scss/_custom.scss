@@ -1,0 +1,56 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+}
+
+.form-group, .form-check {
+  margin-bottom: 2rem;
+  border-color: $wedding-grey;
+}
+
+.number-kids {
+  width: 10%;
+  min-width: 2rem;
+}
+
+div[class^="col-"] {
+  padding: 0 6px;
+}
+
+.wishlist {
+  & div[class^="col-"] {
+    margin-bottom: 12px;
+  }
+}
+
+a {
+  //text-decoration: none;
+  color: $wedding-black;
+
+  &:hover {
+    color: $wedding-black;
+  }
+}
+
+.company-form {
+  display: none;
+}
+
+.form-check-input:hover {
+  cursor: pointer !important;
+}
+
+.show {
+  display: block;
+}

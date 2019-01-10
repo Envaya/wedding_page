@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--Fade upon scroll plugin-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="/src/index.css" rel="stylesheet">
+    <title>Hochzeit M&T</title>
+</head>
+<body>
+<header>
+    <div class="content-container">
+        <div class="inlay">
+            <div class="page-title" data-aos="fade-in">
+                <h1>Miriam</h1>
+                <img src="/src/img/and_icon.svg" alt="& Icon">
+                <h1>Thomas</h1>
+            </div>
+            <div class="date-container" data-aos="fade-in">
+                <img src="/src/img/icon_farn_left.svg" alt="& Icon">
+                <span>28. September 2019</span>
+                <img src="/src/img/icon_farn_right.svg" alt="& Icon">
+            </div>
+            <div class="row animated" data-aos="fade-in">
+                <div class="col-sm">
+                    <div class="couple-portrait bride"></div>
+                </div>
+                <div class="col-sm">
+                    <div class="couple-portrait groom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <article>
+        <div class="inlay">
+            <section class="section-registration" data-aos="fade-in">
+                <div>
+                    <h2>Anmeldung</h2>
+                    <div class="section-title">
+                        <div class="section-title-line"></div>
+                        <img src="/src/img/title_img.svg" alt="">
+                        <div class="section-title-line"></div>
+                    </div>
+                </div>
+                <form action="submit" class="wed-form" style="max-width: 30rem">
+                    <div class="form-group">
+                        <label for="registration-name">Name</label>
+                        <input type="email" class="form-control" id="registration-name" aria-describedby="emailHelp"
+                               placeholder="Name eingeben">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="company-check">
+                            <input type="checkbox" id="company-check" class="form-check-input"
+                                   onclick="toggleCompany()">
+                            Ich komme mit Begleitung
+                        </label>
+                    </div>
+                    <div class="form-group company-form">
+                        <label for="company-name">Name Begleitung</label>
+                        <input type="email" class="form-control" id="company-name" aria-describedby="emailHelp"
+                               placeholder="Name der Begleitung">
+                    </div>
+                    <div class="form-group">
+                        <label for="number-kids">Anzahl Kinder</label>
+                        <input type="email" class="form-control number-kids" id="number-kids"
+                               aria-describedby="emailHelp">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="wed-button">Anmelden</button>
+                    </div>
+                </form>
+            </section>
+            <section class="section-wishlist">
+                <div data-aos="fade-down">
+                    <h2>Wunschliste</h2>
+                    <div class="section-title">
+                        <div class="section-title-line"></div>
+                        <img src="/src/img/title_img.svg" alt="">
+                        <div class="section-title-line"></div>
+                    </div>
+                </div>
+                <div class="container wishlist" data-aos="fade-down" data-aos-delay="200">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="wishlist-item">
+                                <div class="wishlist-item-bg"
+                                     style="background-image: url('/src/img/wishlist_item_travel1.png')">
+                                </div>
+                                <div class="wishlist-item-content">
+                                    <h3>Asienreise</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod.</p>
+                                    <div class="loading-bar-container">
+                                        <span>1200 von 2200</span>
+                                        <div class="loading-bar">
+                                            <div class="loading-bar-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="wed-button wed-button-white">
+                                            Beitragen
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="wishlist-item">
+                                <div class="wishlist-item-bg"
+                                     style="background-image: url('/src/img/wishlist_item_travel1.png')">
+                                </div>
+                                <div class="wishlist-item-content">
+                                    <h3>Asienreise</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod.</p>
+                                    <div class="loading-bar-container">
+                                        <span>1200 von 2200</span>
+                                        <div class="loading-bar">
+                                            <div class="loading-bar-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="wed-button wed-button-white">
+                                            Beitragen
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="wishlist-item">
+                                <div class="wishlist-item-bg"
+                                     style="background-image: url('/src/img/wishlist_item_travel1.png')">
+                                </div>
+                                <div class="wishlist-item-content">
+                                    <h3>Asienreise</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod.</p>
+                                    <div class="loading-bar-container">
+                                        <span>1200 von 2200</span>
+                                        <div class="loading-bar">
+                                            <div class="loading-bar-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="wed-button wed-button-white">
+                                            Beitragen
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="wishlist-item">
+                                <div class="wishlist-item-bg"
+                                     style="background-image: url('/src/img/wishlist_item_travel1.png')">
+                                </div>
+                                <div class="wishlist-item-content">
+                                    <h3>Asienreise</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod.</p>
+                                    <div class="loading-bar-container">
+                                        <span>1200 von 2200</span>
+                                        <div class="loading-bar">
+                                            <div class="loading-bar-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="wed-button wed-button-white">
+                                            Beitragen
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="wishlist-item">
+                                <div class="wishlist-item-bg"
+                                     style="background-image: url('/src/img/wishlist_item_travel1.png')">
+                                </div>
+                                <div class="wishlist-item-content">
+                                    <h3>Asienreise</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod.</p>
+                                    <div class="loading-bar-container">
+                                        <span>1200 von 2200</span>
+                                        <div class="loading-bar">
+                                            <div class="loading-bar-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="wed-button wed-button-white">
+                                            Beitragen
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="event-info">
+            <div data-aos="fade-down">
+                <h2>Ablauf & <br>Informationen</h2>
+                <div class="section-title">
+                    <div class="section-title-line"></div>
+                    <img src="/src/img/title_img.svg" alt="">
+                    <div class="section-title-line"></div>
+                </div>
+            </div>
+            <div class="event-item justify-content-center event-item-light">
+                <div class="event-item-content" data-aos="fade-down" data-aos-offset="-100">
+                    <div class="event-item-content-title">Amtliche Vermählung</div>
+                    <div class="event-item-content-data">
+                        <div class="event-item-content-data-time">
+                            <i class="fa fa-clock-o"></i>10:30-11:30
+                        </div>
+                        <div class="event-item-content-data-location">
+                            <a target="_blank" href="https://goo.gl/maps/oFXAPdmcheJ2"><i class="fa fa-map-marker"></i>Standesamt
+                                Rheinfelden</a>
+                        </div>
+                    </div>
+                    <div class="event-item-content-text">
+                        Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At vero eos et accusam.
+                    </div>
+                </div>
+                <img class="event-item-img event-item-img-left" src="/src/img/heart_arrow.svg">
+            </div>
+            <div class="event-item justify-content-center event-item-dark">
+                <div class="event-item-content" data-aos="fade-down" data-aos-offset="-100">
+                    <div class="event-item-content-title">Kirchliche Trauung</div>
+                    <div class="event-item-content-data">
+                        <div class="event-item-content-data-time">
+                            <i class="fa fa-clock-o"></i>12:00-13:00
+                        </div>
+                        <div class="event-item-content-data-location">
+                            <a target="_blank" href="https://goo.gl/maps/xvxL8rWu12Q2"><i class="fa fa-map-marker"></i>St.
+                                Martin Kirche</a>
+                        </div>
+                    </div>
+                    <div class="event-item-content-text">
+                        Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At vero eos et accusam.
+                    </div>
+                </div>
+                <img class="event-item-img event-item-img-right" src="/src/img/flower_img.svg">
+            </div>
+            <div class="event-item justify-content-center event-item-light">
+                <div class="event-item-content" data-aos="fade-down" data-aos-offset="-100">
+                    <div class="event-item-content-title">Apéro</div>
+                    <div class="event-item-content-data">
+                        <div class="event-item-content-data-time">
+                            <i class="fa fa-clock-o"></i>13:20-14:30
+                        </div>
+                        <div class="event-item-content-data-location">
+                            <a target="_blank" href="https://goo.gl/maps/xvxL8rWu12Q2"><i class="fa fa-map-marker"></i>Hotel
+                                zum Schützen</a>
+                        </div>
+                    </div>
+                    <div class="event-item-content-text">
+                        Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At vero eos et accusam.
+                    </div>
+                </div>
+                <img class="event-item-img event-item-img-left" src="/src/img/pigeon.svg">
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d5113.06595078549!2d7.789214897438065!3d47.548913646422164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srheinfelden+sch%C3%BCtzen!5e0!3m2!1sde!2sch!4v1546259493995"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+        <div class="inlay">
+            <section class="section-contact" data-aos="fade-down">
+                <h2>Kontakt </h2>
+                <div class="section-title">
+                    <div class="section-title-line"></div>
+                    <img src="/src/img/title_img.svg" alt="">
+                    <div class="section-title-line"></div>
+                </div>
+                <div class="section-contact-paragraph">Wenn ihr Fragen oder Vorschläge/Ideen habt,
+                    die ihr vor dem Brautpaar geheim halten wollt,
+                    könnt ihr diese an die Trauzeugen richten.
+                </div>
+                <div class="section-contact-container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="contact-data text-center">
+                                <div class="contact-data-name">Benjamin Stadler</div>
+                                <div class="contact-data-phone"><i class="fa fa-phone"></i>079 723 19 29</div>
+                                <div><i class="fa fa-envelope"></i>bstadler92@hotmail.com</div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="contact-data text-center">
+                                <div class="contact-data-name">Jasmine Speuri</div>
+                                <div class="contact-data-phone"><i class="fa fa-phone"></i>079 721 98 33</div>
+                                <div><i class="fa fa-envelope"></i>jasmine_speuri@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </article>
+</main>
+<footer></footer>
+<!--<script src="/src/index.js"></script>-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/src/main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

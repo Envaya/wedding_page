@@ -1,0 +1,29 @@
+@import "variables";
+
+@import "responsive";
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+body, html {
+  font-family: 'Abhaya Libre', serif;
+  color: $wedding-grey;
+  font-weight: 100 !important;
+
+  @include wed-large-desktop {
+    font-size: 16px;
+  }
+  @include wed-st-small-desktop {
+    font-size: 14px;
+  }
+}
+
+h1 {
+  font-family: 'Parisienne', cursive;
+  color: $wedding-black;
+  font-size: 3.5rem;
+}
+
+h2 {
+  text-align: center;
+}
